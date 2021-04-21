@@ -11,8 +11,8 @@ body {
     grid-template-columns: 5rem 1fr 5rem;
     grid-template-rows: 5rem 5rem 1fr 1rem;
     grid-template-areas: 
-    'h h h'
     'n n n'
+    'h h h'
     'c c c'
     'f f f';
     width: 100vw;
@@ -21,13 +21,13 @@ body {
 }
 
 .nav {
-    grid-area: h;
+    grid-area: n;
     text-align: center;
 }
 
 h1 {
     font-family: 'Indie Flower', cursive;
-    grid-area: n;
+    grid-area: h;
     text-align: center;
     background-color: aliceblue;
 }
@@ -50,4 +50,17 @@ h1 {
 footer {
     grid-area: f;
     text-align: center;
+}
+
+@media screen and (min-width: 640px) {
+ 
+
+    .shop-items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap:50px;
+        
+    }
+
 }
