@@ -54,3 +54,7 @@ function addEventListner(imageArr) {
         })
     }
 }
+
+function StopPropagation() {
+    
+}
