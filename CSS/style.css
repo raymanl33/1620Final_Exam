@@ -1,7 +1,53 @@
 * {
     font-family: 'RocknRoll One', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+body {
+    display: grid;
+    grid-template-columns: 5rem 1fr 5rem;
+    grid-template-rows: 5rem 5rem 1fr 1rem;
+    grid-template-areas: 
+    'h h h'
+    'n n n'
+    'c c c'
+    'f f f';
+    width: 100vw;
+    height: 100vh;
+ 
+}
+
+.nav {
+    grid-area: h;
+    text-align: center;
 }
 
 h1 {
     font-family: 'Indie Flower', cursive;
+    grid-area: n;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+
+
+.container {
+    grid-area: c;
+    grid-gap: 50px;
+    
+    text-align: center;
+    position: relative;
+    display:flex; 
+    flex-direction: column; 
+    width: 100vw;
+    height: 100vh
+  
+}
+
+footer {
+    grid-area: f;
+    text-align: center;
 }
