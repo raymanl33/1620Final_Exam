@@ -51,6 +51,7 @@ function addEventListner(imageArr) {
     for (const image of imageArr) {
         image.addEventListener('click', (e) => {
             console.log(e.target.innerText)
+       
         })
     }
 }
